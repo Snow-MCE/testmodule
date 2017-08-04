@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--这块等于dao接口的实现  namespace必须和接口的类路径一样-->
+<mapper namespace="crossoft.compute.mapper.BomConfigMapper" >
+
+    <!-- Result Map-->
+    <resultMap type="crossoft.compute.bean.BomBean" id="BaseResultMap">
+        <result property="quid" column="QUID" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="plant" column="PLANT" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="id" column="ID" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="bomType" column="BOM_TYPE" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="name" column="NAME" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="statusFk" column="STATUS_FK" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="version" column="VERSION" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="curVersion" column="CUR_VERSION" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="bomTem" column="BOM_TEM" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="adopted" column="ADOPTED" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="dateCreate" column="DATE_CREATE" javaType="java.lang.String" jdbcType="TIMESTAMP" />
+        <result property="dateUpdate" column="DATE_UPDATE" javaType="java.lang.String" jdbcType="TIMESTAMP" />
+        <result property="dateEffect" column="DATE_EFFECT" javaType="java.lang.String" jdbcType="TIMESTAMP" />
+        <result property="dateExpire" column="DATE_EXPIRE" javaType="java.lang.String" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <!-- 根据名字模糊查询 -->
+    <select id="bomListByBom" resultMap="BaseResultMap" parameterType="Object">
+        <![CDATA[
+                SELECT QUID,PLANT,ID,BOM_TYPE,NAME,STATUS_FK,VERSION,CUR_VERSION,BOM_TEM,ADOPTED,DATE_CREATE,DATE_UPDATE,DATE_EFFECT,DATE_EXPIRE FROM BOM
+            ]]>
+    </select>
+
+    <!-- 新增bom数据 -->
+    <insert id="addBom" parameterType="crossoft.compute.bean.BomBean">
+        <![CDATA[
+                INSERT INTO BOM(QUID,PLANT,ID,BOM_TYPE,NAME,STATUS_FK,VERSION,CUR_VERSION,BOM_TEM,ADOPTED,
+                DATE_CREATE,DATE_UPDATE,DATE_EFFECT,DATE_EXPIRE)
+                VALUES(
+                #{quid},#{plant},#{id},#{bomType},#{name},#{statusFk},#{version},#{curVersion},#{bomTem},
+                #{adopted},GETDATE(),GETDATE(),GETDATE(),GETDATE()
+                )
+            ]]>
+    </insert>
+</mapper>

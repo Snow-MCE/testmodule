@@ -1,0 +1,6 @@
+crossoft\compute\impl\configuration\DubboServiceConfiguration.class
+crossoft\compute\impl\serviceImpl\WelcomeServiceImpl.class
+crossoft\compute\impl\configuration\DubboBaseConfiguration.class
+crossoft\compute\impl\serviceImpl\ComputeProxyServiceImpl.class
+crossoft\compute\impl\Application.class
+crossoft\compute\impl\configuration\DubboReferenceConfiguration.class
