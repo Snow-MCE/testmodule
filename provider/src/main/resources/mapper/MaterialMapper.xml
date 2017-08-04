@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--这块等于dao接口的实现  namespace必须和接口的类路径一样-->
+<mapper namespace="crossoft.compute.mapper.MaterialConfigMapper" >
+
+    <!-- Result Map-->
+    <resultMap type="crossoft.compute.bean.MaterialBean" id="BaseResultMap">
+        <result property="quid" column="QUID" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="plant" column="PLANT" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="id" column="ID" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="name" column="NAME" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="statusFk" column="STATUS_FK" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="matTypeFk" column="MAT_TYPE_FK" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="lotSize" column="LOT_SIZE" javaType="java.math.BigDecimal" jdbcType="NUMERIC" />
+        <result property="bomFk" column="BOM_FK" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="srcStatusFk" column="SRC_STATUS_FK" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="version" column="VERSION" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="curVersion" column="CUR_VERSION" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="routerFk" column="ROUTER_FK" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="measureUnit" column="MEASURE_UNIT" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="qtyLimit" column="QTY_LIMIT" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="baseUnit" column="BASE_UNIT" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="timeSens" column="TIME_SENS" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="maxBinLife" column="MAX_BIN_LIFE" javaType="java.math.BigDecimal" jdbcType="NUMERIC" />
+        <result property="maxBinLifeTunit" column="MAX_BIN_LIFE_TUNIT" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="maxShopLife" column="MAX_SHOP_LIFE" javaType="java.math.BigDecimal" jdbcType="NUMERIC" />
+        <result property="maxShopLifeTunit" column="MAX_SHOP_LIFE_TUNIT" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="memo" column="MEMO" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="originalCreator" column="ORIGINAL_CREATOR" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="dateCreate" column="DATE_CREATE" javaType="java.lang.String" jdbcType="TIMESTAMP" />
+        <result property="dateUpdate" column="DATE_UPDATE" javaType="java.lang.String" jdbcType="TIMESTAMP" />
+        <result property="assyDataFk" column="ASSY_DATA_FK" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="removalAssyDataFk" column="REMOVAL_ASSY_DATA_FK" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="invReceptData" column="INV_RECEPT_DATA" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <!-- 根据名字模糊查询 -->
+    <select id="materialListById" resultMap="BaseResultMap" parameterType="String">
+        <![CDATA[
+                SELECT QUID,PLANT,ID,NAME,STATUS_FK,MAT_TYPE_FK,LOT_SIZE,BOM_FK,SRC_STATUS_FK,
+                VERSION,CUR_VERSION,ROUTER_FK,MEASURE_UNIT,QTY_LIMIT,BASE_UNIT,TIME_SENS,
+                MAX_BIN_LIFE,MAX_BIN_LIFE_TUNIT,MAX_SHOP_LIFE,MAX_SHOP_LIFE_TUNIT,MEMO,
+                ORIGINAL_CREATOR,DATE_CREATE,DATE_UPDATE,ASSY_DATA_FK,REMOVAL_ASSY_DATA_FK,INV_RECEPT_DATA
+                FROM MATERIAL WHERE ID = #{id}
+            ]]>
+    </select>
+
+    <!-- 新增物料数据 -->
+    <insert id="addMaterial" parameterType="crossoft.compute.bean.MaterialBean">
+        <![CDATA[
+                INSERT INTO MATERIAL(QUID,PLANT,ID,NAME,STATUS_FK,MAT_TYPE_FK,LOT_SIZE,BOM_FK,SRC_STATUS_FK,
+                VERSION,CUR_VERSION,ROUTER_FK,MEASURE_UNIT,QTY_LIMIT,BASE_UNIT,TIME_SENS,
+                MAX_BIN_LIFE,MAX_BIN_LIFE_TUNIT,MAX_SHOP_LIFE,MAX_SHOP_LIFE_TUNIT,MEMO,
+                ORIGINAL_CREATOR,DATE_CREATE,DATE_UPDATE,ASSY_DATA_FK,REMOVAL_ASSY_DATA_FK,INV_RECEPT_DATA)
+                VALUES(#{quid},#{plant},#{id},#{name},#{statusFk},#{matTypeFk},#{lotSize},#{bomFk},#{srcStatusFk},
+                #{version},#{curVersion},#{routerFk},#{measureUnit},#{qtyLimit},#{baseUnit},#{timeSens},
+                #{maxBinLife},#{maxBinLifeTunit},#{maxShopLife},#{maxShopLifeTunit},#{memo},
+                #{originalCreator},GETDATE(),GETDATE(),#{assyDataFk},#{removalAssyDataFk},#{invReceptData})
+            ]]>
+    </insert>
+
+    <!-- 更新物料数据 -->
+    <update id="updateMaterial" parameterType="crossoft.compute.bean.MaterialBean">
+                UPDATE MATERIAL
+                SET NAME = #{name},
+                STATUS_FK = #{statusFk},
+                MAT_TYPE_FK = #{matTypeFk},
+                <if test="lotSize != null">LOT_SIZE=#{lotSize},</if>
+                BOM_FK = #{bomFk},
+                SRC_STATUS_FK = #{srcStatusFk},
+                CUR_VERSION = #{curVersion},
+                ROUTER_FK = #{routerFk},
+                MEASURE_UNIT = #{measureUnit},
+                QTY_LIMIT = #{qtyLimit},
+                BASE_UNIT = #{baseUnit},
+                TIME_SENS = #{timeSens},
+                MAX_BIN_LIFE = #{maxBinLife},
+                MAX_BIN_LIFE_TUNIT = #{maxBinLifeTunit},
+                MAX_SHOP_LIFE = #{maxShopLife},
+                MAX_SHOP_LIFE_TUNIT = #{maxShopLifeTunit},
+                MEMO =#{memo},
+                ORIGINAL_CREATOR = #{originalCreator},
+                DATE_UPDATE = GETDATE(),
+                ASSY_DATA_FK = #{assyDataFk},
+                REMOVAL_ASSY_DATA_FK = #{removalAssyDataFk},
+                INV_RECEPT_DATA = #{invReceptData}
+                WHERE QUID = #{quid}
+    </update>
+
+    <!-- 删除物料数据 -->
+    <delete id="deleteMaterial" parameterType="String">
+          DELETE FROM MATERIAL WHERE QUID = #{quid}
+    </delete>
+
+</mapper>
