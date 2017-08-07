@@ -12,7 +12,7 @@ public class MaterialBean {
     private String name;
     private String statusFk;
     private String matTypeFk;
-    private BigDecimal lotSize;
+    private Double lotSize;
     private String bomFk;
     private String srcStatusFk;
     private String version;
@@ -80,14 +80,6 @@ public class MaterialBean {
 
     public void setMatTypeFk(String matTypeFk) {
         this.matTypeFk = matTypeFk;
-    }
-
-    public BigDecimal getLotSize() {
-        return lotSize;
-    }
-
-    public void setLotSize(BigDecimal lotSize) {
-        this.lotSize = lotSize;
     }
 
     public String getBomFk() {
@@ -248,5 +240,13 @@ public class MaterialBean {
 
     public void setMeasureUnit(String measureUnit) {
         this.measureUnit = measureUnit;
+    }
+
+    public Double getLotSize() {
+        return lotSize;
+    }
+
+    public void setLotSize(Double lotSize) {
+        this.lotSize = lotSize;
     }
 }
