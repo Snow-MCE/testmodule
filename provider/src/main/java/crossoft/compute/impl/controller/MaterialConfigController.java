@@ -22,7 +22,7 @@ public class MaterialConfigController {
         materialBean.setQuid("BOM002,TEST,A");
         materialBean.setCurVersion("Y");
         materialBean.setId("BOM002");
-        materialBean.setLotSize(new BigDecimal(1));
+        materialBean.setLotSize( 12.45 );
         materialBean.setMemo("测试物料");
         materialBean.setBomFk("BOM,TEST,ITEM001");
         materialBean.setName("测试用物料BOM001");
