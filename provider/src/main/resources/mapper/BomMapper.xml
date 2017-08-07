@@ -23,6 +23,36 @@
         <result property="dateExpire" column="DATE_EXPIRE" javaType="java.lang.String" jdbcType="TIMESTAMP" />
     </resultMap>
 
+    <!-- Result Map-->
+    <resultMap type="crossoft.compute.bean.BomComponentBean" id="BomCompResultMap">
+        <result property="id" column="ID" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="bomFk" column="BOM_FK" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="materialFk" column="MATERIAL_FK" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="sequence" column="SEQUENCE" javaType="java.math.BigDecimal" jdbcType="NUMERIC" />
+        <result property="enabled" column="ENABLED" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="validStart" column="VALID_START" javaType="java.lang.String" jdbcType="TIMESTAMP" />
+        <result property="validEnd" column="VALID_END" javaType="java.lang.String" jdbcType="TIMESTAMP" />
+        <result property="useItemDefaults" column="USE_ITEM_DEFAULTS" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="preAssembled" column="PRE_ASSEMBLED" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="qty" column="QTY" javaType="java.lang.Double" jdbcType="NUMERIC" />
+        <result property="testPart" column="TEST_PART" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="bomTemplate" column="BOM_TEMPLATE" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="disassembleOperationFk" column="DISASSEMBLE_OPERATION_FK" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="createTrackableSfc" column="CREATE_TRACKABLE_SFC" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="maximumUsage" column="MAXIMUM_USAGE" javaType="java.lang.Double" jdbcType="NUMERIC" />
+        <result property="maximumNc" column="MAXIMUM_NC" javaType="java.lang.Double" jdbcType="NUMERIC" />
+        <result property="assembleAsReq" column="ASSEMBLE_AS_REQ" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="dateCreate" column="DATE_CREATE" javaType="java.lang.String" jdbcType="TIMESTAMP" />
+        <result property="dateUpdate" column="DATE_UPDATE" javaType="java.lang.String" jdbcType="TIMESTAMP" />
+        <result property="parentSequence" column="PARENT_SEQUENCE" javaType="java.math.BigDecimal" jdbcType="NUMERIC" />
+        <result property="orderItemNumber" column="ORDER_ITEM_NUMBER" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="erpChangeNumber" column="ERP_CHANGE_NUMBER" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="erpSequence" column="ERP_SEQUENCE" javaType="java.math.BigDecimal" jdbcType="NUMERIC" />
+        <result property="bomComponentType" column="BOM_COMPONENT_TYPE" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="assembleOperationFk" column="ASSEMBLE_OPERATION_FK" javaType="java.lang.String" jdbcType="VARCHAR" />
+        <result property="assyDataTypeFk" column="ASSY_DATA_TYPE_FK" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </resultMap>
+
     <!-- 根据名字模糊查询 -->
     <select id="bomListByBom" resultMap="BaseResultMap" parameterType="Object">
         <![CDATA[
@@ -41,4 +71,101 @@
                 )
             ]]>
     </insert>
+
+    <!-- 更新bom数据 -->
+    <update id="updateBom" parameterType="crossoft.compute.bean.BomBean">
+        <![CDATA[
+                UPDATE BOM SET
+                BOM_TYPE = #{bomType},
+                NAME = #{name},
+                CUR_VERSION = #{curVersion},
+                BOM_TEM = #{bomTem},
+                DATE_UPDATE = GETDATE(),
+                DATE_EFFECT = #{dateEffect},
+                DATE_EXPIRE = #{dateExpire}
+                WHERE QUID = #{quid}
+            ]]>
+    </update>
+
+    <!-- 删除bom数据 -->
+    <delete id="delteBom" parameterType="crossoft.compute.bean.BomBean">
+        <![CDATA[
+                DELETE FROM BOM WHERE QUID = #{quid}
+            ]]>
+    </delete>
+
+    <!-- 查询物料清单组件数据 -->
+    <select id="bomComponentList" parameterType="Object" resultMap="BomCompResultMap">
+        <![CDATA[
+                SELECT ID,BOM_FK,MATERIAL_FK,SEQUENCE,ENABLED,VALID_START,VALID_END,USE_ITEM_DEFAULTS,
+                PRE_ASSEMBLED,QTY,TEST_PART,BOM_TEMPLATE,DISASSEMBLE_OPERATION_FK,CREATE_TRACKABLE_SFC,
+                MAXIMUM_USAGE,MAXIMUM_NC,ASSEMBLE_AS_REQ,DATE_CREATE,DATE_UPDATE,PARENT_SEQUENCE,ORDER_ITEM_NUMBER,
+                ERP_CHANGE_NUMBER,ERP_SEQUENCE,BOM_COMPONENT_TYPE,ASSEMBLE_OPERATION_FK,ASSY_DATA_TYPE_FK
+                FROM BOM_COMPONENT WHERE ID = #{id}
+            ]]>
+    </select>
+
+    <!-- 新增物料清单组件数据 -->
+    <insert id="addBomComponent" parameterType="crossoft.compute.bean.BomComponentBean">
+        <![CDATA[
+                INSERT INTO BOM_COMPONENT(
+                ID,BOM_FK,MATERIAL_FK,SEQUENCE,ENABLED,VALID_START,VALID_END,USE_ITEM_DEFAULTS,
+                PRE_ASSEMBLED,QTY,TEST_PART,BOM_TEMPLATE,DISASSEMBLE_OPERATION_FK,
+                CREATE_TRACKABLE_SFC,MAXIMUM_USAGE,MAXIMUM_NC,ASSEMBLE_AS_REQ,DATE_CREATE,DATE_UPDATE,
+                PARENT_SEQUENCE,ORDER_ITEM_NUMBER,ERP_CHANGE_NUMBER,ERP_SEQUENCE,BOM_COMPONENT_TYPE,
+                ASSEMBLE_OPERATION_FK,ASSY_DATA_TYPE_FK
+                )
+                VALUES(
+                #{id},#{bomFk},#{materialFk},#{sequence},#{enabled},#{validStart},#{validEnd},#{useItemDefaults},
+                #{preAssembled},${qty},#{testPart},#{bomTemplate},#{disassembleOperationFk},
+                #{createTrackableSfc},${maximumUsage},${maximumNc},#{assembleAsReq},GETDATE(),GETDATE(),
+                #{parentSequence},#{orderItemNumber},#{erpChangeNumber},#{erpSequence},#{bomComponentType},
+                #{assembleOperationFk},#{assyDataTypeFk}
+                )
+            ]]>
+    </insert>
+
+    <!-- 删除物料清单组件数据 -->
+    <delete id="deleteBomComponent" parameterType="crossoft.compute.bean.BomComponentBean">
+        <![CDATA[
+                DELETE FROM BOM_COMPONENT WHERE ID = #{id}
+            ]]>
+    </delete>
+
+    <!-- 更新物料清单组件数据 -->
+    <update id="updateBomComponent" parameterType="crossoft.compute.bean.BomComponentBean">
+        <![CDATA[
+                UPDATE BOM_COMPONENT
+                SET BOM_COMPONENT_TYPE = #{bomComponentType},
+                ASSEMBLE_AS_REQ = #{assembleAsReq},
+                ASSEMBLE_OPERATION_FK = #{assembleOperationFk},
+                QTY = #{qty},
+                ASSY_DATA_TYPE_FK = #{assyDataTypeFk},
+                MAXIMUM_USAGE = #{maximumUsage},
+                MAXIMUM_NC = #{maximumNc}
+                WHERE ID = #{id}
+            ]]>
+    </update>
+
+    <!-- 物料清单组件拆分 -->
+    <insert id="reDistributeBomComponent" parameterType="java.util.Map">
+        <![CDATA[
+                INSERT INTO BOM_COMPONENT(
+                ID,BOM_FK,MATERIAL_FK,SEQUENCE,ENABLED,VALID_START,VALID_END,USE_ITEM_DEFAULTS,
+                PRE_ASSEMBLED,QTY,TEST_PART,BOM_TEMPLATE,DISASSEMBLE_OPERATION_FK,
+                CREATE_TRACKABLE_SFC,MAXIMUM_USAGE,MAXIMUM_NC,ASSEMBLE_AS_REQ,DATE_CREATE,DATE_UPDATE,
+                PARENT_SEQUENCE,ORDER_ITEM_NUMBER,ERP_CHANGE_NUMBER,ERP_SEQUENCE,BOM_COMPONENT_TYPE,
+                ASSEMBLE_OPERATION_FK,ASSY_DATA_TYPE_FK
+                )
+                (SELECT #{newId},#{newBomFk},MATERIAL_FK,SEQUENCE,ENABLED,VALID_START,VALID_END,
+                USE_ITEM_DEFAULTS,PRE_ASSEMBLED,QTY,TEST_PART,BOM_TEMPLATE,DISASSEMBLE_OPERATION_FK,
+                CREATE_TRACKABLE_SFC,MAXIMUM_USAGE,MAXIMUM_NC,ASSEMBLE_AS_REQ,GETDATE(),GETDATE(),
+                PARENT_SEQUENCE,ORDER_ITEM_NUMBER,ERP_CHANGE_NUMBER,ERP_SEQUENCE,BOM_COMPONENT_TYPE,
+                ASSEMBLE_OPERATION_FK,ASSY_DATA_TYPE_FK
+                FROM BOM_COMPONENT WHERE ID = #{sourceId})
+            ]]>
+    </insert>
+
+
+
 </mapper>
