@@ -13,7 +13,7 @@
         <result property="name" column="NAME" javaType="java.lang.String" jdbcType="VARCHAR" />
         <result property="statusFk" column="STATUS_FK" javaType="java.lang.String" jdbcType="VARCHAR" />
         <result property="matTypeFk" column="MAT_TYPE_FK" javaType="java.lang.String" jdbcType="VARCHAR" />
-        <result property="lotSize" column="LOT_SIZE" javaType="java.math.BigDecimal" jdbcType="NUMERIC" />
+        <result property="lotSize" column="LOT_SIZE" javaType="java.lang.Double" jdbcType="NUMERIC" />
         <result property="bomFk" column="BOM_FK" javaType="java.lang.String" jdbcType="VARCHAR" />
         <result property="srcStatusFk" column="SRC_STATUS_FK" javaType="java.lang.String" jdbcType="VARCHAR" />
         <result property="version" column="VERSION" javaType="java.lang.String" jdbcType="VARCHAR" />
@@ -54,7 +54,7 @@
                 VERSION,CUR_VERSION,ROUTER_FK,MEASURE_UNIT,QTY_LIMIT,BASE_UNIT,TIME_SENS,
                 MAX_BIN_LIFE,MAX_BIN_LIFE_TUNIT,MAX_SHOP_LIFE,MAX_SHOP_LIFE_TUNIT,MEMO,
                 ORIGINAL_CREATOR,DATE_CREATE,DATE_UPDATE,ASSY_DATA_FK,REMOVAL_ASSY_DATA_FK,INV_RECEPT_DATA)
-                VALUES(#{quid},#{plant},#{id},#{name},#{statusFk},#{matTypeFk},#{lotSize},#{bomFk},#{srcStatusFk},
+                VALUES(#{quid},#{plant},#{id},#{name},#{statusFk},#{matTypeFk},${lotSize},#{bomFk},#{srcStatusFk},
                 #{version},#{curVersion},#{routerFk},#{measureUnit},#{qtyLimit},#{baseUnit},#{timeSens},
                 #{maxBinLife},#{maxBinLifeTunit},#{maxShopLife},#{maxShopLifeTunit},#{memo},
                 #{originalCreator},GETDATE(),GETDATE(),#{assyDataFk},#{removalAssyDataFk},#{invReceptData})
@@ -67,7 +67,7 @@
                 SET NAME = #{name},
                 STATUS_FK = #{statusFk},
                 MAT_TYPE_FK = #{matTypeFk},
-                <if test="lotSize != null">LOT_SIZE=#{lotSize},</if>
+                <if test="lotSize != null">LOT_SIZE=${lotSize},</if>
                 BOM_FK = #{bomFk},
                 SRC_STATUS_FK = #{srcStatusFk},
                 CUR_VERSION = #{curVersion},
