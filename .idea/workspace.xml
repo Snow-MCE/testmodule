@@ -6,8 +6,25 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="513cfb43-9c84-40f0-bfae-5b643318140a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="513cfb43-9c84-40f0-bfae-5b643318140a" name="Default" comment="物料清单维护功能代码提交">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_crossoft_front_1_0_SNAPSHOT.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/front.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/provider/provider.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/provider/src/test/java/crossoft/compute/impl/controller/BomConfigControllerTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/provider/target/test-classes/crossoft/compute/impl/controller/BomConfigControllerTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/providerinterface/providerinterface.iml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider/target/classes/crossoft/compute/impl/controller/BomConfigController.class" afterPath="$PROJECT_DIR$/provider/target/classes/crossoft/compute/impl/controller/BomConfigController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider/target/classes/crossoft/compute/impl/controller/MaterialConfigController.class" afterPath="$PROJECT_DIR$/provider/target/classes/crossoft/compute/impl/controller/MaterialConfigController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider/target/test-classes/ApplicationTests.class" afterPath="$PROJECT_DIR$/provider/target/test-classes/ApplicationTests.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/providerinterface/target/classes/crossoft/compute/bean/MaterialBean.class" afterPath="$PROJECT_DIR$/providerinterface/target/classes/crossoft/compute/bean/MaterialBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/providerinterface/target/classes/crossoft/compute/mapper/BomConfigMapper.class" afterPath="$PROJECT_DIR$/providerinterface/target/classes/crossoft/compute/mapper/BomConfigMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/providerinterface/target/classes/crossoft/compute/mapper/MaterialConfigMapper.class" afterPath="$PROJECT_DIR$/providerinterface/target/classes/crossoft/compute/mapper/MaterialConfigMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider/pom.xml" afterPath="$PROJECT_DIR$/provider/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider/src/test/java/ApplicationTests.java" afterPath="$PROJECT_DIR$/provider/src/test/java/ApplicationTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider/target/classes/mapper/BomMapper.xml" afterPath="$PROJECT_DIR$/provider/target/classes/mapper/BomMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider/target/classes/mapper/MaterialMapper.xml" afterPath="$PROJECT_DIR$/provider/target/classes/mapper/MaterialMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/provider/target/" />
     <ignored path="$PROJECT_DIR$/providerinterface/target/" />
@@ -39,8 +56,8 @@
       <file leaf-file-name="BomConfigMapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/mapper/BomConfigMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="302">
+              <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,42 +68,10 @@
       <file leaf-file-name="BomConfigController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/controller/BomConfigController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-21">
-              <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+            <state relative-caret-position="374">
+              <caret line="51" column="39" lean-forward="false" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#459#460#0" expanded="true" />
-                <element signature="e#514#515#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MaterialMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/provider/src/main/resources/mapper/MaterialMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="92" column="30" lean-forward="false" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="30" />
-              <folding>
-                <marker date="1501837285674" expanded="true" signature="3448:3858" ph="SELECT QUID,... MATERIAL" />
-                <marker date="1501837285674" expanded="true" signature="4025:4824" ph="INSERT INTO MATERIAL... " />
-                <marker date="1501837285674" expanded="true" signature="4976:6052" ph="UPDATE MATER... " />
-                <marker date="1501837285674" expanded="true" signature="6154:6195" ph="DELETE FROM " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MaterialBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/bean/MaterialBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-              <folding>
-                <element signature="e#5181#5182#0" expanded="true" />
-                <element signature="e#5215#5216#0" expanded="true" />
-                <element signature="e#5269#5270#0" expanded="true" />
-                <element signature="e#5315#5316#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,21 +80,63 @@
       <file leaf-file-name="BomMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/provider/src/main/resources/mapper/BomMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="12" column="102" lean-forward="true" selection-start-line="12" selection-start-column="102" selection-end-line="12" selection-end-column="102" />
+            <state relative-caret-position="272">
+              <caret line="151" column="17" lean-forward="false" selection-start-line="151" selection-start-column="17" selection-end-line="151" selection-end-column="17" />
               <folding>
-                <marker date="1501825685244" expanded="true" signature="1965:2102" ph="SELECT QUID,... BOM" />
-                <marker date="1501825685244" expanded="true" signature="2260:2630" ph="SELECT QUID,... BOM" />
+                <marker date="1502090796927" expanded="true" signature="5024:5161" ph="SELECT QUID,... BOM" />
+                <marker date="1502090796927" expanded="true" signature="5319:5689" ph="SELECT QUID,... BOM" />
+                <marker date="1502090796927" expanded="true" signature="5850:6133" ph="INSERT INTO BOM... " />
+                <marker date="1502090796927" expanded="true" signature="5850:6184" ph="UPDATE BOM S... " />
+                <marker date="1502090796927" expanded="true" signature="6344:6380" ph="UPDATE BOM S... " />
+                <marker date="1502090796927" expanded="true" signature="6557:7004" ph="DELETE FROM " />
+                <marker date="1502090796927" expanded="true" signature="6557:7021" ph="SELECT ID,BO... BOM_COMPONENT" />
+                <marker date="1502090796927" expanded="true" signature="7200:8202" ph="SELECT ID,BO... BOM_COMPONENT" />
+                <marker date="1502090796927" expanded="true" signature="8384:8426" ph="DELETE FROM " />
+                <marker date="1502090796927" expanded="true" signature="8608:9015" ph="UPDATE BOM_C... " />
+                <marker date="1502090796927" expanded="true" signature="8614:9015" ph="DELETE FROM " />
+                <marker date="1502090796927" expanded="true" signature="9176:10172" ph="INSERT INTO BOM_COMPONENT... " />
+                <marker date="1502090796927" expanded="true" signature="9677:10160" ph="SELECT 'BomC... BOM_COMPONENT" />
+                <marker date="1502090796927" expanded="true" signature="9677:10171" ph="SELECT ##{new... BOM_COMPONENT" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MaterialMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/provider/src/main/resources/mapper/MaterialMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="56" column="80" lean-forward="false" selection-start-line="56" selection-start-column="80" selection-end-line="56" selection-end-column="80" />
+              <folding>
+                <marker date="1502090088728" expanded="true" signature="3444:3854" ph="SELECT QUID,... MATERIAL" />
+                <marker date="1502090088728" expanded="true" signature="4021:4820" ph="INSERT INTO MATERIAL... " />
+                <marker date="1502090088728" expanded="true" signature="4972:6048" ph="UPDATE MATER... " />
+                <marker date="1502090088728" expanded="true" signature="6150:6191" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MaterialBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/bean/MaterialBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+              <folding>
+                <element signature="e#5189#5190#0" expanded="true" />
+                <element signature="e#5219#5220#0" expanded="true" />
+                <element signature="e#5265#5266#0" expanded="true" />
+                <element signature="e#5303#5304#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/provider/src/test/java/ApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="34" column="51" lean-forward="true" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+            <state relative-caret-position="285">
+              <caret line="64" column="56" lean-forward="false" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,34 +144,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReflectiveCallable.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/provider/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+            <state relative-caret-position="238">
+              <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyBatisMapperScannerConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/dataBaseConfiguration/MyBatisMapperScannerConfig.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/providerinterface/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="18" column="62" lean-forward="true" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+            <state relative-caret-position="-106">
+              <caret line="67" column="21" lean-forward="false" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MaterialConfigMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/mapper/MaterialConfigMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -152,12 +167,10 @@
       <file leaf-file-name="MaterialConfigController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/controller/MaterialConfigController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="30" column="43" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+            <state relative-caret-position="285">
+              <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1913#1914#0" expanded="true" />
-                <element signature="e#1981#1982#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -185,6 +198,17 @@
       <find>measureUnitFk</find>
       <find>addBom</find>
       <find>updateMaterial</find>
+      <find>BOM_COMPONENT_TYPE</find>
+      <find>ASSY_DATA_TYPE_FK</find>
+      <find>MAXIMUM_NC</find>
+      <find>MaximumUsage</find>
+      <find>ASSEMBLE_AS_REQ</find>
+      <find>assembleAsReq</find>
+      <find>disassembleOperationFk</find>
+      <find>isassembleOperationFk</find>
+      <find>lot</find>
+      <find>QTY</find>
+      <find>providerinterface</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -199,7 +223,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/providerinterface/src/com/didispace/service/WelcomeService.java" />
         <option value="$PROJECT_DIR$/provider/src/main/java/com/didispace/configuration/DubboReferenceConfiguration.java" />
         <option value="$PROJECT_DIR$/provider/src/main/java/com/didispace/serviceImpl/WelcomeServiceImpl.java" />
         <option value="$PROJECT_DIR$/provider/src/main/java/com/didispace/Application.java" />
@@ -209,7 +232,6 @@
         <option value="$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/serviceImpl/ComputeProxyServiceImpl.java" />
         <option value="$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/serviceImpl/WelcomeServiceImpl.java" />
         <option value="$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/dataBaseConfig/PlatformTransactionManager.java" />
-        <option value="$PROJECT_DIR$/provider/pom.xml" />
         <option value="$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/Application.java" />
         <option value="$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/configuration/MyBatisMapperScannerConfig.java" />
         <option value="$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/api/bean/BomBean.java" />
@@ -238,18 +260,20 @@
         <option value="$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/configuration/DubboServiceConfiguration.java" />
         <option value="$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/bean/BomBean.java" />
         <option value="$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/serviceImpl/BomConfigController.java" />
-        <option value="$PROJECT_DIR$/provider/src/main/resources/mapper/BomMapper.xml" />
         <option value="$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/dataBaseConfiguration/DataSourceConfig.java" />
         <option value="$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/api/BomConfigService.java" />
         <option value="$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/serviceImpl/BomConfigServiceImpl.java" />
-        <option value="$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/mapper/BomConfigMapper.java" />
         <option value="$PROJECT_DIR$/provider/src/test/java/crossoft/compute/impl/controller/BomConfigControllerTest.java" />
-        <option value="$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/controller/BomConfigController.java" />
-        <option value="$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/bean/MaterialBean.java" />
-        <option value="$PROJECT_DIR$/provider/src/main/resources/mapper/MaterialMapper.xml" />
         <option value="$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/mapper/MaterialConfigMapper.java" />
+        <option value="$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/bean/BomComponentBean.java" />
+        <option value="$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/bean/MaterialBean.java" />
         <option value="$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/controller/MaterialConfigController.java" />
+        <option value="$PROJECT_DIR$/provider/src/main/resources/mapper/MaterialMapper.xml" />
+        <option value="$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/controller/BomConfigController.java" />
         <option value="$PROJECT_DIR$/provider/src/test/java/ApplicationTests.java" />
+        <option value="$PROJECT_DIR$/provider/src/main/resources/mapper/BomMapper.xml" />
+        <option value="$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/mapper/BomConfigMapper.java" />
+        <option value="$PROJECT_DIR$/provider/pom.xml" />
       </list>
     </option>
   </component>
@@ -330,7 +354,9 @@
     <option name="width" value="1616" />
     <option name="height" value="876" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -346,6 +372,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -552,32 +580,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mapper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testmodule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="provider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -708,7 +710,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Production">
           <PATH>
@@ -951,7 +952,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -977,18 +977,18 @@
       <recent name="C:\Users\Snow\IdeaProjects\testmodule\provider\src\main\resources\mapper" />
       <recent name="C:\Users\Snow\IdeaProjects\testmodule\providerinterface\src\main\resources\mapper" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Snow\IdeaProjects\testmodule\provider\src\main\resources\mapper" />
-      <recent name="C:\Users\Snow\IdeaProjects\testmodule\provider\src\main\java\crossoft\compute\impl\dataBaseConfiguration" />
-      <recent name="C:\Users\Snow\IdeaProjects\testmodule\providerinterface\src\main\resources" />
-      <recent name="C:\Users\Snow\IdeaProjects\testmodule\providerinterface\src\main\resources\mapper" />
-      <recent name="C:\Users\Snow\IdeaProjects\testmodule\providerinterface\src\main\java\crossoft\compute\configuration" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="crossoft.compute" />
       <recent name="crossoft.compute.api.bean" />
       <recent name="com.didispace" />
       <recent name="com.didispace.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Snow\IdeaProjects\testmodule\front" />
+      <recent name="C:\Users\Snow\IdeaProjects\testmodule\provider\src\main\resources\mapper" />
+      <recent name="C:\Users\Snow\IdeaProjects\testmodule\provider\src\main\java\crossoft\compute\impl\dataBaseConfiguration" />
+      <recent name="C:\Users\Snow\IdeaProjects\testmodule\providerinterface\src\main\resources" />
+      <recent name="C:\Users\Snow\IdeaProjects\testmodule\providerinterface\src\main\resources\mapper" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="crossoft.compute.impl.dataBaseConfig" />
@@ -1006,70 +1006,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ApplicationTests.updateMaterialTest">
-    <configuration default="false" name="ApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="provider" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ApplicationTests" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ApplicationTests.addBomTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="provider" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ApplicationTests" />
-      <option name="METHOD_NAME" value="addBomTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ApplicationTests.addMaterialTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="provider" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ApplicationTests" />
-      <option name="METHOD_NAME" value="addMaterialTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ApplicationTests.reDisBomCompTest">
     <configuration default="false" name="ApplicationTests.getMaterialListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="provider" />
@@ -1099,6 +1036,69 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ApplicationTests" />
       <option name="METHOD_NAME" value="updateMaterialTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ApplicationTests.addBomComponentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="provider" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ApplicationTests" />
+      <option name="METHOD_NAME" value="addBomComponentTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ApplicationTests.deleteBomComponentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="provider" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ApplicationTests" />
+      <option name="METHOD_NAME" value="deleteBomComponentTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ApplicationTests.reDisBomCompTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="provider" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ApplicationTests" />
+      <option name="METHOD_NAME" value="reDisBomCompTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1551,19 +1551,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Application.Application" />
       <item index="1" class="java.lang.String" itemvalue="Spring Boot.Application" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ApplicationTests" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ApplicationTests.addBomTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ApplicationTests.addMaterialTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ApplicationTests.getMaterialListTest" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.ApplicationTests.updateMaterialTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ApplicationTests.getMaterialListTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ApplicationTests.updateMaterialTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ApplicationTests.addBomComponentTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ApplicationTests.deleteBomComponentTest" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.ApplicationTests.reDisBomCompTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ApplicationTests.updateMaterialTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ApplicationTests.getMaterialListTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ApplicationTests.addMaterialTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ApplicationTests.addBomTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ApplicationTests" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ApplicationTests.reDisBomCompTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ApplicationTests.deleteBomComponentTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ApplicationTests.addBomComponentTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ApplicationTests.updateMaterialTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ApplicationTests.getMaterialListTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1583,44 +1583,95 @@
       <workItem from="1501663204551" duration="13801000" />
       <workItem from="1501720967664" duration="8816000" />
       <workItem from="1501730309911" duration="20486000" />
-      <workItem from="1501807000291" duration="24639000" />
+      <workItem from="1501807000291" duration="25875000" />
+      <workItem from="1502066274245" duration="23807000" />
     </task>
+    <task id="LOCAL-00001" summary="物料清单维护功能代码提交">
+      <created>1502090972774</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1502090972774</updated>
+    </task>
+    <task id="LOCAL-00002" summary="物料清单维护功能代码提交">
+      <created>1502091062994</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1502091062994</updated>
+    </task>
+    <task id="LOCAL-00003" summary="物料清单维护功能代码提交">
+      <created>1502091093549</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1502091093549</updated>
+    </task>
+    <task id="LOCAL-00004" summary="物料清单维护功能代码提交">
+      <created>1502091107659</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1502091107659</updated>
+    </task>
+    <task id="LOCAL-00005" summary="物料清单维护功能代码提交">
+      <created>1502091116177</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1502091116178</updated>
+    </task>
+    <task id="LOCAL-00006" summary="物料清单维护功能代码提交">
+      <created>1502091127625</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1502091127625</updated>
+    </task>
+    <task id="LOCAL-00007" summary="物料清单维护功能代码提交">
+      <created>1502091139317</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1502091139317</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ApplicationTests_addMaterialTest - 2017.08.04 at 15h 47m 26s.xml">
-      <configuration name="ApplicationTests.addMaterialTest" configurationId="JUnit" />
+    <history-entry file="ApplicationTests_addBomComponentTest - 2017.08.07 at 13h 46m 15s.xml">
+      <configuration name="ApplicationTests.addBomComponentTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTests_addMaterialTest - 2017.08.04 at 15h 48m 43s.xml">
-      <configuration name="ApplicationTests.addMaterialTest" configurationId="JUnit" />
+    <history-entry file="ApplicationTests_addBomComponentTest - 2017.08.07 at 13h 50m 38s.xml">
+      <configuration name="ApplicationTests.addBomComponentTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTests_addMaterialTest - 2017.08.04 at 15h 57m 26s.xml">
-      <configuration name="ApplicationTests.addMaterialTest" configurationId="JUnit" />
+    <history-entry file="ApplicationTests_addBomComponentTest - 2017.08.07 at 14h 30m 16s.xml">
+      <configuration name="ApplicationTests.addBomComponentTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTests_getMaterialListTest - 2017.08.04 at 16h 01m 20s.xml">
-      <configuration name="ApplicationTests.getMaterialListTest" configurationId="JUnit" />
+    <history-entry file="ApplicationTests_addBomComponentTest - 2017.08.07 at 14h 31m 32s.xml">
+      <configuration name="ApplicationTests.addBomComponentTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTests_getMaterialListTest - 2017.08.04 at 16h 11m 24s.xml">
-      <configuration name="ApplicationTests.getMaterialListTest" configurationId="JUnit" />
+    <history-entry file="ApplicationTests_addBomComponentTest - 2017.08.07 at 14h 34m 32s.xml">
+      <configuration name="ApplicationTests.addBomComponentTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTests_updateMaterialTest - 2017.08.04 at 16h 34m 51s.xml">
-      <configuration name="ApplicationTests.updateMaterialTest" configurationId="JUnit" />
+    <history-entry file="ApplicationTests_addBomComponentTest - 2017.08.07 at 14h 41m 45s.xml">
+      <configuration name="ApplicationTests.addBomComponentTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTests_updateMaterialTest - 2017.08.04 at 16h 40m 36s.xml">
-      <configuration name="ApplicationTests.updateMaterialTest" configurationId="JUnit" />
+    <history-entry file="ApplicationTests_addBomComponentTest - 2017.08.07 at 14h 44m 30s.xml">
+      <configuration name="ApplicationTests.addBomComponentTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTests_updateMaterialTest - 2017.08.04 at 16h 46m 37s.xml">
-      <configuration name="ApplicationTests.updateMaterialTest" configurationId="JUnit" />
+    <history-entry file="ApplicationTests_addBomComponentTest - 2017.08.07 at 14h 46m 38s.xml">
+      <configuration name="ApplicationTests.addBomComponentTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTests_updateMaterialTest - 2017.08.04 at 16h 48m 51s.xml">
-      <configuration name="ApplicationTests.updateMaterialTest" configurationId="JUnit" />
+    <history-entry file="ApplicationTests_deleteBomComponentTest - 2017.08.07 at 14h 54m 07s.xml">
+      <configuration name="ApplicationTests.deleteBomComponentTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTests_updateMaterialTest - 2017.08.04 at 16h 51m 07s.xml">
-      <configuration name="ApplicationTests.updateMaterialTest" configurationId="JUnit" />
+    <history-entry file="ApplicationTests_reDisBomCompTest - 2017.08.07 at 15h 22m 25s.xml">
+      <configuration name="ApplicationTests.reDisBomCompTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67742000" />
+    <option name="totallyTimeSpent" value="92785000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1633,10 +1684,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34811828" sideWeight="0.5025707" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2128821" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1645,19 +1697,16 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43817204" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4247312" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34811828" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34811828" sideWeight="0.4974293" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40528634" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24293059" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25449872" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1666,6 +1715,9 @@
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39655173" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1674,17 +1726,21 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="物料清单维护功能代码提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="物料清单维护功能代码提交" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/provider/src/test/java/ApplicationTests.java</url>
-          <line>53</line>
+          <line>77</line>
           <properties />
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1693,8 +1749,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/provider/src/main/java/com/didispace/serviceImpl.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.3.2.RELEASE/spring-boot-autoconfigure-1.3.2.RELEASE.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.class" />
     <entry file="file://$PROJECT_DIR$/provider/provider.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
@@ -1710,14 +1764,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/dataBaseConfig/PlatformTransactionManager.java" />
-    <entry file="file://$PROJECT_DIR$/provider/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="62" lean-forward="false" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/spring/boot/mybatis-spring-boot-autoconfigure/1.1.1/mybatis-spring-boot-autoconfigure-1.1.1.jar!/org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -1731,8 +1777,20 @@
         <state relative-caret-position="119">
           <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding>
-            <marker date="1501825685244" expanded="true" signature="1965:2102" ph="SELECT QUID,... BOM" />
-            <marker date="1501825685244" expanded="true" signature="2260:2630" ph="SELECT QUID,... BOM" />
+            <marker date="1502090796927" expanded="true" signature="5024:5161" ph="SELECT QUID,... BOM" />
+            <marker date="1502090796927" expanded="true" signature="5319:5689" ph="SELECT QUID,... BOM" />
+            <marker date="1502090796927" expanded="true" signature="5850:6133" ph="INSERT INTO BOM... " />
+            <marker date="1502090796927" expanded="true" signature="5850:6184" ph="UPDATE BOM S... " />
+            <marker date="1502090796927" expanded="true" signature="6344:6380" ph="UPDATE BOM S... " />
+            <marker date="1502090796927" expanded="true" signature="6557:7004" ph="DELETE FROM " />
+            <marker date="1502090796927" expanded="true" signature="6557:7021" ph="SELECT ID,BO... BOM_COMPONENT" />
+            <marker date="1502090796927" expanded="true" signature="7200:8202" ph="SELECT ID,BO... BOM_COMPONENT" />
+            <marker date="1502090796927" expanded="true" signature="8384:8426" ph="DELETE FROM " />
+            <marker date="1502090796927" expanded="true" signature="8608:9015" ph="UPDATE BOM_C... " />
+            <marker date="1502090796927" expanded="true" signature="8614:9015" ph="DELETE FROM " />
+            <marker date="1502090796927" expanded="true" signature="9176:10172" ph="INSERT INTO BOM_COMPONENT... " />
+            <marker date="1502090796927" expanded="true" signature="9677:10160" ph="SELECT 'BomC... BOM_COMPONENT" />
+            <marker date="1502090796927" expanded="true" signature="9677:10171" ph="SELECT ##{new... BOM_COMPONENT" />
           </folding>
         </state>
       </provider>
@@ -1744,14 +1802,6 @@
     <entry file="file://$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/configuration.java" />
     <entry file="file://$PROJECT_DIR$/providerinterface/src/main/resources/mapper/bomMapper" />
     <entry file="file://$PROJECT_DIR$/providerinterface/src/main/resources/log4j.properties" />
-    <entry file="file://$PROJECT_DIR$/providerinterface/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1550">
-          <caret line="92" column="21" lean-forward="false" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/configuration/MyBatisConfig.java" />
     <entry file="file://$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/configuration/DubboBaseConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1786,7 +1836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1806,14 +1855,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/provider/front.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/provider/front.iml" />
     <entry file="file://$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/bean/BomBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1881,7 +1923,39 @@
         <state relative-caret-position="255">
           <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/serviceImpl/BomConfigServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#544#545#0" expanded="false" />
+            <element signature="e#608#609#0" expanded="false" />
+            <element signature="e#669#670#0" expanded="false" />
+            <element signature="e#717#718#0" expanded="false" />
+            <element signature="e#793#794#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/mapper/MainMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/dataBaseConfiguration/MyBatisMapperScannerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="62" lean-forward="false" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1894,44 +1968,204 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/serviceImpl/BomConfigServiceImpl.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#793#794#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/mapper/MainMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        <state relative-caret-position="221">
+          <caret line="16" column="50" lean-forward="true" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/provider/src/main/resources/mapper/BomMapper.xml">
+    <entry file="file://$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/mapper/MaterialConfigMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="12" column="102" lean-forward="true" selection-start-line="12" selection-start-column="102" selection-end-line="12" selection-end-column="102" />
+        <state relative-caret-position="272">
+          <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/bean/MaterialBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
           <folding>
-            <marker date="1501825685244" expanded="true" signature="1965:2102" ph="SELECT QUID,... BOM" />
-            <marker date="1501825685244" expanded="true" signature="2260:2630" ph="SELECT QUID,... BOM" />
+            <element signature="e#5189#5190#0" expanded="true" />
+            <element signature="e#5219#5220#0" expanded="true" />
+            <element signature="e#5265#5266#0" expanded="true" />
+            <element signature="e#5303#5304#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/bean/BomComponentBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding>
+            <element signature="e#1016#1017#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1077#1078#0" expanded="true" />
+            <element signature="e#1105#1106#0" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1165#1166#0" expanded="true" />
+            <element signature="e#1207#1208#0" expanded="true" />
+            <element signature="e#1241#1242#0" expanded="true" />
+            <element signature="e#1278#1279#0" expanded="true" />
+            <element signature="e#1311#1312#0" expanded="true" />
+            <element signature="e#1363#1364#0" expanded="true" />
+            <element signature="e#1407#1408#0" expanded="true" />
+            <element signature="e#1446#1447#0" expanded="true" />
+            <element signature="e#1477#1478#0" expanded="true" />
+            <element signature="e#1529#1530#0" expanded="true" />
+            <element signature="e#1569#1570#0" expanded="true" />
+            <element signature="e#1603#1604#0" expanded="true" />
+            <element signature="e#1633#1634#0" expanded="true" />
+            <element signature="e#1679#1680#0" expanded="true" />
+            <element signature="e#1717#1718#0" expanded="true" />
+            <element signature="e#1754#1755#0" expanded="true" />
+            <element signature="e#1787#1788#0" expanded="true" />
+            <element signature="e#1839#1840#0" expanded="true" />
+            <element signature="e#1883#1884#0" expanded="true" />
+            <element signature="e#1918#1919#0" expanded="true" />
+            <element signature="e#1949#1950#0" expanded="true" />
+            <element signature="e#1997#1998#0" expanded="true" />
+            <element signature="e#2037#2038#0" expanded="true" />
+            <element signature="e#2079#2080#0" expanded="true" />
+            <element signature="e#2117#2118#0" expanded="true" />
+            <element signature="e#2179#2180#0" expanded="true" />
+            <element signature="e#2233#2234#0" expanded="true" />
+            <element signature="e#2272#2273#0" expanded="true" />
+            <element signature="e#2307#2308#0" expanded="true" />
+            <element signature="e#2363#2364#0" expanded="true" />
+            <element signature="e#2411#2412#0" expanded="true" />
+            <element signature="e#2451#2452#0" expanded="true" />
+            <element signature="e#2487#2488#0" expanded="true" />
+            <element signature="e#2545#2546#0" expanded="true" />
+            <element signature="e#2595#2596#0" expanded="true" />
+            <element signature="e#2630#2631#0" expanded="true" />
+            <element signature="e#2661#2662#0" expanded="true" />
+            <element signature="e#2709#2710#0" expanded="true" />
+            <element signature="e#2749#2750#0" expanded="true" />
+            <element signature="e#2787#2788#0" expanded="true" />
+            <element signature="e#2821#2822#0" expanded="true" />
+            <element signature="e#2875#2876#0" expanded="true" />
+            <element signature="e#2921#2922#0" expanded="true" />
+            <element signature="e#2970#2971#0" expanded="true" />
+            <element signature="e#3015#3016#0" expanded="true" />
+            <element signature="e#3204#3205#0" expanded="true" />
+            <element signature="e#3245#3246#0" expanded="true" />
+            <element signature="e#3313#3314#0" expanded="true" />
+            <element signature="e#3373#3374#0" expanded="true" />
+            <element signature="e#3410#3411#0" expanded="true" />
+            <element signature="e#3443#3444#0" expanded="true" />
+            <element signature="e#3495#3496#0" expanded="true" />
+            <element signature="e#3539#3540#0" expanded="true" />
+            <element signature="e#3576#3577#0" expanded="true" />
+            <element signature="e#3609#3610#0" expanded="true" />
+            <element signature="e#3661#3662#0" expanded="true" />
+            <element signature="e#3705#3706#0" expanded="true" />
+            <element signature="e#3750#3751#0" expanded="true" />
+            <element signature="e#3787#3788#0" expanded="true" />
+            <element signature="e#3851#3852#0" expanded="true" />
+            <element signature="e#3903#3904#0" expanded="true" />
+            <element signature="e#3945#3946#0" expanded="true" />
+            <element signature="e#3983#3984#0" expanded="true" />
+            <element signature="e#4045#4046#0" expanded="true" />
+            <element signature="e#4099#4100#0" expanded="true" />
+            <element signature="e#4141#4142#0" expanded="true" />
+            <element signature="e#4179#4180#0" expanded="true" />
+            <element signature="e#4241#4242#0" expanded="true" />
+            <element signature="e#4295#4296#0" expanded="true" />
+            <element signature="e#4337#4338#0" expanded="true" />
+            <element signature="e#4371#4372#0" expanded="true" />
+            <element signature="e#4429#4430#0" expanded="true" />
+            <element signature="e#4475#4476#0" expanded="true" />
+            <element signature="e#4518#4519#0" expanded="true" />
+            <element signature="e#4557#4558#0" expanded="true" />
+            <element signature="e#4621#4622#0" expanded="true" />
+            <element signature="e#4677#4678#0" expanded="true" />
+            <element signature="e#4723#4724#0" expanded="true" />
+            <element signature="e#4765#4766#0" expanded="true" />
+            <element signature="e#4835#4836#0" expanded="true" />
+            <element signature="e#4897#4898#0" expanded="true" />
+            <element signature="e#4938#4939#0" expanded="true" />
+            <element signature="e#4975#4976#0" expanded="true" />
+            <element signature="e#5035#5036#0" expanded="true" />
+            <element signature="e#5087#5088#0" expanded="true" />
+            <element signature="e#5117#5118#0" expanded="true" />
+            <element signature="e#5143#5144#0" expanded="true" />
+            <element signature="e#5181#5182#0" expanded="true" />
+            <element signature="e#5211#5212#0" expanded="true" />
+            <element signature="e#5250#5251#0" expanded="true" />
+            <element signature="e#5285#5286#0" expanded="true" />
+            <element signature="e#5341#5342#0" expanded="true" />
+            <element signature="e#5389#5390#0" expanded="true" />
+            <element signature="e#5425#5426#0" expanded="true" />
+            <element signature="e#5457#5458#0" expanded="true" />
+            <element signature="e#5507#5508#0" expanded="true" />
+            <element signature="e#5549#5550#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider/src/main/resources/mapper/MaterialMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="56" column="80" lean-forward="false" selection-start-line="56" selection-start-column="80" selection-end-line="56" selection-end-column="80" />
+          <folding>
+            <marker date="1502090088728" expanded="true" signature="3444:3854" ph="SELECT QUID,... MATERIAL" />
+            <marker date="1502090088728" expanded="true" signature="4021:4820" ph="INSERT INTO MATERIAL... " />
+            <marker date="1502090088728" expanded="true" signature="4972:6048" ph="UPDATE MATER... " />
+            <marker date="1502090088728" expanded="true" signature="6150:6191" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/mapper/BomConfigMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        <state relative-caret-position="302">
+          <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/front/src/main/java/crossoft/compute/impl/controller/BomConfigController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider/src/main/resources/mapper/BomMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="151" column="17" lean-forward="false" selection-start-line="151" selection-start-column="17" selection-end-line="151" selection-end-column="17" />
+          <folding>
+            <marker date="1502090796927" expanded="true" signature="5024:5161" ph="SELECT QUID,... BOM" />
+            <marker date="1502090796927" expanded="true" signature="5319:5689" ph="SELECT QUID,... BOM" />
+            <marker date="1502090796927" expanded="true" signature="5850:6133" ph="INSERT INTO BOM... " />
+            <marker date="1502090796927" expanded="true" signature="5850:6184" ph="UPDATE BOM S... " />
+            <marker date="1502090796927" expanded="true" signature="6344:6380" ph="UPDATE BOM S... " />
+            <marker date="1502090796927" expanded="true" signature="6557:7004" ph="DELETE FROM " />
+            <marker date="1502090796927" expanded="true" signature="6557:7021" ph="SELECT ID,BO... BOM_COMPONENT" />
+            <marker date="1502090796927" expanded="true" signature="7200:8202" ph="SELECT ID,BO... BOM_COMPONENT" />
+            <marker date="1502090796927" expanded="true" signature="8384:8426" ph="DELETE FROM " />
+            <marker date="1502090796927" expanded="true" signature="8608:9015" ph="UPDATE BOM_C... " />
+            <marker date="1502090796927" expanded="true" signature="8614:9015" ph="DELETE FROM " />
+            <marker date="1502090796927" expanded="true" signature="9176:10172" ph="INSERT INTO BOM_COMPONENT... " />
+            <marker date="1502090796927" expanded="true" signature="9677:10160" ph="SELECT 'BomC... BOM_COMPONENT" />
+            <marker date="1502090796927" expanded="true" signature="9677:10171" ph="SELECT ##{new... BOM_COMPONENT" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/controller/MaterialConfigController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1940,87 +2174,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/controller/BomConfigController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        <state relative-caret-position="374">
+          <caret line="51" column="39" lean-forward="false" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/bean/MaterialBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding>
-            <element signature="e#5181#5182#0" expanded="true" />
-            <element signature="e#5215#5216#0" expanded="true" />
-            <element signature="e#5269#5270#0" expanded="true" />
-            <element signature="e#5315#5316#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider/src/main/resources/mapper/MaterialMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="92" column="30" lean-forward="false" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="30" />
-          <folding>
-            <marker date="1501837285674" expanded="true" signature="3448:3858" ph="SELECT QUID,... MATERIAL" />
-            <marker date="1501837285674" expanded="true" signature="4025:4824" ph="INSERT INTO MATERIAL... " />
-            <marker date="1501837285674" expanded="true" signature="4976:6052" ph="UPDATE MATER... " />
-            <marker date="1501837285674" expanded="true" signature="6154:6195" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/providerinterface/src/main/java/crossoft/compute/mapper/MaterialConfigMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/dataBaseConfiguration/MyBatisMapperScannerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="62" lean-forward="true" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider/src/main/java/crossoft/compute/impl/controller/MaterialConfigController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="30" column="43" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1913#1914#0" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/provider/src/test/java/ApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="34" column="51" lean-forward="true" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+        <state relative-caret-position="285">
+          <caret line="64" column="56" lean-forward="false" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/providerinterface/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-106">
+          <caret line="67" column="21" lean-forward="false" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

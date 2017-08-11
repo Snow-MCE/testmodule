@@ -3,10 +3,10 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--这块等于dao接口的实现  namespace必须和接口的类路径一样-->
-<mapper namespace="crossoft.compute.mapper.MaterialConfigMapper" >
+<mapper namespace="com.crossoft.mapper.MaterialConfigMapper" >
 
     <!-- Result Map-->
-    <resultMap type="crossoft.compute.bean.MaterialBean" id="BaseResultMap">
+    <resultMap type="com.crossoft.domain.MaterialBean" id="BaseResultMap">
         <result property="quid" column="QUID" javaType="java.lang.String" jdbcType="VARCHAR" />
         <result property="plant" column="PLANT" javaType="java.lang.String" jdbcType="VARCHAR" />
         <result property="id" column="ID" javaType="java.lang.String" jdbcType="VARCHAR" />
@@ -37,18 +37,24 @@
     </resultMap>
 
     <!-- 根据名字模糊查询 -->
-    <select id="materialListById" resultMap="BaseResultMap" parameterType="String">
-        <![CDATA[
-                SELECT QUID,PLANT,ID,NAME,STATUS_FK,MAT_TYPE_FK,LOT_SIZE,BOM_FK,SRC_STATUS_FK,
-                VERSION,CUR_VERSION,ROUTER_FK,MEASURE_UNIT,QTY_LIMIT,BASE_UNIT,TIME_SENS,
-                MAX_BIN_LIFE,MAX_BIN_LIFE_TUNIT,MAX_SHOP_LIFE,MAX_SHOP_LIFE_TUNIT,MEMO,
-                ORIGINAL_CREATOR,DATE_CREATE,DATE_UPDATE,ASSY_DATA_FK,REMOVAL_ASSY_DATA_FK,INV_RECEPT_DATA
-                FROM MATERIAL WHERE ID = #{id}
-            ]]>
+    <select id="materialListById" resultMap="BaseResultMap" parameterType="java.util.Map">
+        SELECT QUID,PLANT,ID,NAME,STATUS_FK,MAT_TYPE_FK,LOT_SIZE,BOM_FK,SRC_STATUS_FK,
+        VERSION,CUR_VERSION,ROUTER_FK,MEASURE_UNIT,QTY_LIMIT,BASE_UNIT,TIME_SENS,
+        MAX_BIN_LIFE,MAX_BIN_LIFE_TUNIT,MAX_SHOP_LIFE,MAX_SHOP_LIFE_TUNIT,MEMO,
+        ORIGINAL_CREATOR,DATE_CREATE,DATE_UPDATE,ASSY_DATA_FK,REMOVAL_ASSY_DATA_FK,INV_RECEPT_DATA
+        FROM MATERIAL
+        <where>
+            <if test="id != null">
+                ID LIKE '%${id}%'
+            </if>
+            <if test="quid != null">
+                AND QUID = #{quid}
+            </if>
+        </where>
     </select>
 
     <!-- 新增物料数据 -->
-    <insert id="addMaterial" parameterType="crossoft.compute.bean.MaterialBean">
+    <insert id="addMaterial" parameterType="com.crossoft.domain.MaterialBean">
         <![CDATA[
                 INSERT INTO MATERIAL(QUID,PLANT,ID,NAME,STATUS_FK,MAT_TYPE_FK,LOT_SIZE,BOM_FK,SRC_STATUS_FK,
                 VERSION,CUR_VERSION,ROUTER_FK,MEASURE_UNIT,QTY_LIMIT,BASE_UNIT,TIME_SENS,
@@ -62,7 +68,7 @@
     </insert>
 
     <!-- 更新物料数据 -->
-    <update id="updateMaterial" parameterType="crossoft.compute.bean.MaterialBean">
+    <update id="updateMaterial" parameterType="com.crossoft.domain.MaterialBean">
                 UPDATE MATERIAL
                 SET NAME = #{name},
                 STATUS_FK = #{statusFk},
@@ -93,5 +99,16 @@
     <delete id="deleteMaterial" parameterType="String">
           DELETE FROM MATERIAL WHERE QUID = #{quid}
     </delete>
+
+    <!-- call 存储过程 -->
+    <select id="callMaterialProcedure" parameterMap="getMaterialParamMap" statementType="CALLABLE">
+              { call getMaterialData(?,?) }
+    </select>
+
+    <!-- 参数MAP -->
+    <parameterMap id="getMaterialParamMap" type="java.util.Map">
+        <parameter property="id" mode="IN" jdbcType="VARCHAR"/>
+        <parameter property="idCount" mode="OUT" jdbcType="INTEGER"/>
+    </parameterMap>
 
 </mapper>
